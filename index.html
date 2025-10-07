@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sriya Kalyan – Résumé</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --card-bg: #ffffff;
+      --text: #333;
+      --accent: #0056b3; /* deep blue accent */
+      --shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: var(--accent);
+      color: white;
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    /* Sticky navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--accent);
+      padding: 0.5rem 0;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 0.75rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #cce1ff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .card h2 {
+      color: var(--accent);
+      margin-top: 0;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    .project-card {
+      background: #f0f4fa;
+      border-left: 5px solid var(--accent);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .project-card strong {
+      color: var(--accent);
+    }
+
+    footer {
+      background: #e8ebef;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        margin: 0 0.5rem;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sriya Kalyan</h1>
+  <p>Computer Science Student • UC Berkeley</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+  <section id="about" class="card">
+    <h2>About</h2>
+    <p>I am an aspiring student recognized for my excellence and exceptional leadership in various fields including problem–solving based mathematics, computer programming, research, and community services. My interests include game design, statistics, pattern recognition, and more. It is my goal to be an innovator in Computer Science and Artificial Intelligence which connects all my interests.</p>
+  </section>
+
+  <section id="skills" class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, Java, C, Assembly, MATLAB, C#, JSON, Node.js, JavaScript, HTML/CSS, R</li>
+      <li><strong>Databases:</strong> SQL Server, MySQL</li>
+      <li><strong>Specializations:</strong> Machine Learning, Optimization, Data Science, Computer Vision</li>
+      <li><strong>Software:</strong> Adobe Photoshop, Rhino 7, Adobe InDesign</li>
+    </ul>
+  </section>
+
+  <section id="education" class="card">
+    <h2>Education</h2>
+    <p><strong>University of California, Berkeley</strong><br>
+    Junior in EECS and Korean Languages and Cultures</p>
+    <p><strong>Moorpark College</strong><br>
+    Eight Associate Degrees</p>
+  </section>
+
+  <section id="experience" class="card">
+    <h2>Experience</h2>
+    <p><strong>Agoura Math Circle – CEO</strong> (2019–Present)<br>
+    Expanded organization from 300 to 1000+ students; raised $100,000+; developed web/mobile apps.</p>
+
+    <p><strong>Teaching Assistant – CS 61A</strong> (Aug 2025–Present)<br>
+    Teach discussion sections, lead interns, mentor 100+ students.</p>
+
+    <p><strong>Tutor & Academic Intern – CS 61A</strong> (2023–2025)<br>
+    Assisted with grading, labs, and student mentorship.</p>
+  </section>
+
+  <section id="projects" class="card">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <strong><a href="https://sriyakalyan.github.io/cs180/">Computer Vision Projects</a></strong> - <em>(August 2025 – Present)</em>
+      <br>
+      Gained hands-on experience with core computer vision algorithms, signal processing, and numerical optimization techniques. 
+      <br>
+      Applied Gaussian and Laplacian pyramids for image filtering and blending, creating hybrid images that reveal different details at varying viewing  distances. 
+      <br>
+      Performed gradient-domain blending and frequency analysis to seamlessly combine multiple images, achieving photorealistic composites. 
+      <br>
+      Developed techniques for feature matching and image warping to create mosaics and panoramas. 
+    </div>
+
+    <div class="project-card">
+      <strong>Ireonada</strong> - <em>(June 2024 – Aug 2024)</em>
+      <br>
+      Personalized wake-up routine web app with React + Node.js.  
+    </div>
+
+    <div class="project-card">
+      <strong>Voice-Sensing Robot Car</strong> - <em>(Jan 2024 – May 2024)</em>
+      <br>
+      Voice-controlled PCA robot using C + ML.  
+    </div>
+
+    <div class="project-card">
+      <strong>Breast Cancer Data Analysis</strong> - <em>(May 2023)</em>
+      <br>
+      Exploratory data analysis with Python/R.  
+    </div>
+
+    <div class="project-card">
+      <strong>Autonomous RACECAR</strong> - <em>(Aug 2021 – Dec 2021)</em>
+      <br>
+      OpenCV + ML for real-time navigation.  
+    </div>
+
+    <div class="project-card">
+      <strong>Minecraft Plugins</strong> - <em>(Apr 2020 – Aug 2021)</em>
+      <br>
+      Developed gameplay-enhancing Java plugins.  
+    </div>
+
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sriya@example.com">sriyakalyan@berkeley.edu</a></p>
+    <p><a href="https://www.linkedin.com/in/sriyakalyan/">LinkedIn</a> • <a href="http://github.com/sriyakalyan">Github</a></p>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 Sriya Kalyan. All rights reserved.
+</footer>
+
+</body>
+</html>
